@@ -77,9 +77,7 @@ namespace CensusAnalyserTest
             Assert.AreEqual(CensusAnalyserException.ExceptionType.INCORRECT_HEADER, censusException.etype);
             Assert.AreEqual(CensusAnalyserException.ExceptionType.INCORRECT_HEADER, stateException.etype);
         }
-
-
-
+       
 
     }
 }
