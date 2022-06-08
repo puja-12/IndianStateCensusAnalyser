@@ -30,7 +30,7 @@ namespace IndianStateCensusAnalyser
                 }
                 if (csvFilePath.Contains("IndianStateCensusData.csv"))
                 {
-                    dataMap.Add(column[1], new CensusDTO(new CensusDataDAO(column[0], column[1], column[2], column[3])));
+                    dataMap.Add(column[0], new CensusDTO(new CensusDataDAO(column[0], column[1], column[2], column[3])));
                 }
             }
             return dataMap.ToDictionary(p => p.Key, p => p.Value);
